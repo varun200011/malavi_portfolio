@@ -1,0 +1,1249 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Malavi Manickavelu | HR Business Partner</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap');
+
+    :root { --primary: 234 179 8; }
+
+    .tail-container { font-family: 'Inter', system-ui, sans-serif; }
+
+    .hero-bg { background: linear-gradient(135deg, #0f172a 0%, #1e2937 100%); }
+
+    .nav-link { position: relative; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+
+    .nav-link:after {
+
+      content: '';
+
+      position: absolute;
+
+      width: 0;
+
+      height: 2px;
+
+      bottom: -2px;
+
+      left: 0;
+
+      background-color: rgb(234 179 8);
+
+      transition: width 0.3s ease;
+
+    }
+
+    .nav-link:hover:after { width: 100%; }
+
+    .timeline-dot { transition: all 0.4s ease; }
+
+    .experience-card:hover {
+
+      transform: translateY(-12px);
+
+      box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+
+    }
+
+    .star { transition: transform 0.2s ease; }
+
+    .star:hover { transform: scale(1.2); }
+
+    .typing {
+
+      overflow: hidden;
+
+      border-right: .15em solid #eab308;
+
+      white-space: nowrap;
+
+      animation: typing 3.5s steps(30, end) forwards;
+
+    }
+
+    @keyframes typing {
+
+      from { width: 0 }
+
+      to { width: 100%; border-right: none; }
+
+    }
+
+    @keyframes blink-caret {
+
+      from, to { border-color: transparent }
+
+      50% { border-color: #eab308; }
+
+    }
+
+    .stat-number { font-variant-numeric: tabular-nums; }
+
+    .testimonial-card { transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1); }
+
+    /* ===== THEME SMOOTH TRANSITION (Premium) ===== */
+
+    html, body {
+
+      transition: background-color 700ms cubic-bezier(0.22, 1, 0.36, 1),
+
+                  color 700ms cubic-bezier(0.22, 1, 0.36, 1);
+
+    }
+
+    * {
+
+      transition-property: background-color, color, border-color, box-shadow, transform, opacity;
+
+      transition-duration: 700ms;
+
+      transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+
+    }
+
+    button, a, input, textarea { transition-duration: 250ms; }
+</style>
+<script>
+
+    // Tailwind config (keep here so dark mode works reliably)
+
+    tailwind.config = {
+
+      darkMode: 'class',
+
+      theme: { extend: {} }
+
+    }
+</script>
+</head>
+<body class="tail-container bg-zinc-50 dark:bg-zinc-950 text-zinc-900 dark:text-zinc-100 overflow-x-hidden">
+<!-- NAVBAR -->
+<nav class="bg-white/80 dark:bg-zinc-900/80 backdrop-blur-lg border-b border-zinc-200 dark:border-zinc-800 sticky top-0 z-50">
+<div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 bg-yellow-400 text-zinc-900 rounded-2xl flex items-center justify-center font-bold text-2xl shadow-lg">MM</div>
+<div>
+<span class="font-bold text-2xl tracking-tighter">Malavi M</span>
+</div>
+</div>
+<div class="hidden md:flex items-center gap-8 text-sm font-medium">
+<a href="#about" class="nav-link">About</a>
+<a href="#experience" class="nav-link">Experience</a>
+<a href="#skills" class="nav-link">Skills</a>
+<a href="#achievements" class="nav-link">Achievements</a>
+<a href="#testimonials" class="nav-link">Testimonials</a>
+</div>
+<div class="flex items-center gap-4">
+<!-- ✅ FIXED: Theme toggle now RETAINS + icon reflects state -->
+<button onclick="toggleDarkMode()" id="theme-toggle"
+
+                class="w-10 h-10 flex items-center justify-center rounded-2xl hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
+
+                aria-label="Toggle theme">
+<i id="theme-icon" class="fa-solid fa-moon text-xl"></i>
+</button>
+<a href="https://drive.google.com/file/d/YOUR_RESUME_PDF_LINK/view" target="_blank"
+
+           class="px-6 py-3 bg-yellow-400 hover:bg-yellow-500 text-zinc-900 font-semibold rounded-3xl flex items-center gap-2 transition-all active:scale-95">
+<i class="fa-solid fa-download"></i>
+<span>Resume</span>
+</a>
+</div>
+</div>
+</nav>
+<!-- HERO -->
+<header class="hero-bg min-h-screen flex items-center relative overflow-hidden">
+<div class="absolute inset-0 bg-[radial-gradient(at_bottom_right,#eab308_0%,transparent_50%)] opacity-10"></div>
+<div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center pt-20">
+<div data-aos="fade-right" class="space-y-8">
+<div class="inline-flex items-center gap-3 bg-white/10 dark:bg-white/5 backdrop-blur-md px-6 py-2 rounded-3xl text-sm">
+<div class="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></div>
+
+          Available for HRBP opportunities
+</div>
+<h1 class="text-6xl md:text-7xl font-bold tracking-tighter leading-none text-white drop-shadow-[0_4px_8px_rgba(0,0,0,0.7)]">
+
+          Malavi<br>Manickavelu
+</h1>
+<div class="text-3xl md:text-4xl text-yellow-400 font-medium typing inline-block" id="typing-title">
+
+          HR Business Partner
+</div>
+<p class="text-xl text-zinc-300 max-w-lg">
+
+          5 years shaping high-performing teams in 24/7 environments.
+
+          Passionate about employee experience, compliance excellence & data-driven people strategies.
+</p>
+<div class="flex flex-wrap gap-4">
+<a href="#contact"
+
+             class="px-8 py-4 bg-white text-zinc-900 font-semibold rounded-3xl flex items-center gap-3 hover:scale-105 transition-all">
+<i class="fa-solid fa-paper-plane"></i>
+
+            Let's Connect
+</a>
+<a href="#testimonials"
+
+             class="px-8 py-4 border border-white/50 hover:border-yellow-400 font-medium rounded-3xl flex items-center gap-3 transition-all">
+<i class="fa-solid fa-star"></i>
+
+            See What Others Say
+</a>
+</div>
+<div class="flex items-center gap-8 text-sm pt-6">
+<div>
+<span class="block text-3xl font-semibold text-yellow-400">5</span>
+<span class="text-zinc-400">Years Experience</span>
+</div>
+<div>
+<span class="block text-3xl font-semibold text-yellow-400">1000+</span>
+<span class="text-zinc-400">Employees Impacted</span>
+</div>
+<div>
+<span class="block text-3xl font-semibold text-yellow-400">100%</span>
+<span class="text-zinc-400">Compliance Rate</span>
+</div>
+</div>
+</div>
+<!-- Hero Image -->
+<div data-aos="fade-left" class="relative">
+<div class="aspect-square max-w-md mx-auto relative">
+<img id="hero-photo"
+
+               src="https://picsum.photos/id/1011/600/600"
+
+               alt="Malavi Manickavelu - HR Business Partner"
+
+               class="rounded-3xl shadow-2xl object-cover w-full h-full border-8 border-yellow-400/20">
+<!-- Floating badges -->
+<div class="absolute -top-6 -right-6 bg-white dark:bg-zinc-900 px-6 py-4 rounded-3xl shadow-xl flex items-center gap-3">
+<i class="fa-solid fa-award text-3xl text-yellow-400"></i>
+<div>
+<div class="font-semibold">LOVE Award FY25</div>
+<div class="text-xs text-zinc-500">NTT DATA</div>
+</div>
+</div>
+<div class="absolute -bottom-6 -left-6 bg-white dark:bg-zinc-900 px-5 py-3 rounded-3xl shadow-xl text-sm">
+<div class="flex items-center gap-2">
+<div class="flex text-yellow-400">★★★★★</div>
+<span class="font-medium">4.9/5</span>
+</div>
+<div class="text-xs text-zinc-500">from team &amp; leadership</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Scroll indicator -->
+<div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-xs tracking-widest">
+<div class="w-px h-12 bg-gradient-to-b from-transparent via-yellow-400 to-transparent"></div>
+
+      SCROLL TO EXPLORE
+</div>
+</header>
+<!-- ABOUT -->
+<section id="about" class="py-24 bg-white dark:bg-zinc-900">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid md:grid-cols-12 gap-16 items-center">
+<div class="md:col-span-5" data-aos="fade-up">
+<div class="sticky top-24">
+<span class="uppercase tracking-[3px] text-yellow-400 text-sm font-medium">Who I Am</span>
+<h2 class="text-5xl font-bold tracking-tighter mt-3 leading-none">HR Leader who turns<br>people into performance</h2>
+<div class="h-1 w-20 bg-yellow-400 mt-8"></div>
+</div>
+</div>
+<div class="md:col-span-7 space-y-8 text-lg leading-relaxed" data-aos="fade-up" data-aos-delay="100">
+<p class="text-zinc-600 dark:text-zinc-400">
+
+            Results-driven HR professional with 5+ years of progressive experience across Talent Acquisition, HR Operations, and HR Business Partnering.
+
+            Starting my career in Talent Acquisition, I advanced into HR Ops and HRBP roles, building strong end-to-end people management expertise
+
+            while supporting high-volume 24/7 environments at TCS and NTT DATA (400–600+ employees).
+</p>
+<p class="text-zinc-600 dark:text-zinc-400">
+
+            I specialize in aligning business goals with HR strategies to boost productivity, compliance, and employee experience.
+
+            Hands-on expertise in employee lifecycle management, performance management, employee relations, payroll inputs & statutory compliance (EPFO/ESIC)
+
+            — maintaining 100% Workday data accuracy with zero audit breaches.
+
+            Passionate about data-driven HR, I deliver actionable insights via dashboards & Power BI and drive engagement through HR Connect sessions,
+
+            wellness initiatives, and large-scale culture programs.
+</p>
+<div class="grid grid-cols-2 gap-8 pt-6">
+<div>
+<div class="font-semibold text-yellow-400">Core Belief</div>
+<div class="text-2xl font-medium leading-tight mt-2">
+
+                Great culture isn't built by policies — it's built by people who feel seen, supported, and inspired.
+</div>
+</div>
+<div class="flex items-center gap-6">
+<img src="https://picsum.photos/id/64/120/120" alt="Signature" class="rounded-2xl">
+<div>
+<div class="font-semibold">Malavi Manickavelu</div>
+<div class="text-sm text-zinc-500">Chennai, Tamil Nadu</div>
+<a href="mailto:malavikannan1999@gmail.com" class="text-yellow-400 hover:underline flex items-center gap-1 mt-3">
+<i class="fa-solid fa-envelope"></i> malavikannan1999@gmail.com
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- EXPERIENCE -->
+<section id="experience" class="py-24 bg-zinc-100 dark:bg-black">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center mb-16">
+<span class="px-5 py-2 bg-yellow-400 text-zinc-900 text-sm font-semibold rounded-3xl">PROFESSIONAL JOURNEY</span>
+<h2 class="text-5xl font-bold tracking-tighter mt-4">Where I've Made an Impact</h2>
+</div>
+<div class="grid md:grid-cols-2 gap-10">
+<!-- NTT DATA -->
+<div data-aos="fade-up" class="experience-card bg-white dark:bg-zinc-900 p-10 rounded-3xl border border-transparent hover:border-yellow-400/30">
+<div class="flex justify-between items-start mb-8">
+<div>
+<div class="font-bold text-2xl">NTT DATA</div>
+<div class="text-yellow-400 font-medium">Human Resource Business Partner • 2024 – 2026</div>
+</div>
+<div class="text-right">
+<div class="text-sm text-zinc-500">Chennai</div>
+<div class="font-mono text-xs bg-zinc-100 dark:bg-zinc-800 px-3 py-1 rounded-2xl mt-1">400+ HC</div>
+</div>
+</div>
+<ul class="space-y-5 text-zinc-700 dark:text-zinc-300 leading-relaxed">
+<li class="flex gap-4"><i class="fa-solid fa-circle-check text-yellow-400 mt-1"></i> Partnered with business leaders on HR strategy, workforce planning, and compliance</li>
+<li class="flex gap-4"><i class="fa-solid fa-circle-check text-yellow-400 mt-1"></i> Managed end-to-end HR operations: onboarding, offboarding, payroll inputs, leave, and Workday administration</li>
+<li class="flex gap-4"><i class="fa-solid fa-circle-check text-yellow-400 mt-1"></i> Handled compensation changes, promotions, and Performance Improvement Plans (PIPs)</li>
+<li class="flex gap-4"><i class="fa-solid fa-circle-check text-yellow-400 mt-1"></i> Built talent pipelines and coordinated pre-onboarding through Growth Hub</li>
+<li class="flex gap-4"><i class="fa-solid fa-circle-check text-yellow-400 mt-1"></i> Resolved employee grievances in line with labor laws and company policies</li>
+<li class="flex gap-4"><i class="fa-solid fa-circle-check text-yellow-400 mt-1"></i> Conducted monthly HR Connect sessions at client sites to drive engagement</li>
+<li class="flex gap-4"><i class="fa-solid fa-circle-check text-yellow-400 mt-1"></i> Supported wellness initiatives including MediAssist and annual health check-ups</li>
+<li class="flex gap-4"><i class="fa-solid fa-circle-check text-yellow-400 mt-1"></i> Deployed and tracked L&amp;D programs; drove capability-building initiatives</li>
+<li class="flex gap-4"><i class="fa-solid fa-circle-check text-yellow-400 mt-1"></i> Contributed to performance management cycles and productivity analysis</li>
+<li class="flex gap-4"><i class="fa-solid fa-circle-check text-yellow-400 mt-1"></i> Led HR transformation initiatives and strengthened stakeholder relationships</li>
+</ul>
+</div>
+<!-- TCS -->
+<div data-aos="fade-up" data-aos-delay="150" class="experience-card bg-white dark:bg-zinc-900 p-10 rounded-3xl border border-transparent hover:border-yellow-400/30">
+<div class="flex justify-between items-start mb-8">
+<div>
+<div class="font-bold text-2xl">Tata Consultancy Services</div>
+<div class="text-yellow-400 font-medium">HRBP &amp; HR Specialist • 2019 – 2024</div>
+</div>
+<div class="text-right">
+<div class="text-sm text-zinc-500">Chennai</div>
+<div class="font-mono text-xs bg-zinc-100 dark:bg-zinc-800 px-3 py-1 rounded-2xl mt-1">600+ HC</div>
+</div>
+</div>
+<ul class="space-y-5 text-zinc-700 dark:text-zinc-300 leading-relaxed">
+<li class="flex gap-4"><i class="fa-solid fa-circle-check text-yellow-400 mt-1"></i> Managed end-to-end employee lifecycle: onboarding, offboarding, and HR policy support</li>
+<li class="flex gap-4"><i class="fa-solid fa-circle-check text-yellow-400 mt-1"></i> Maintained HRIS data (personal, compensation, performance, attendance) with high accuracy</li>
+<li class="flex gap-4"><i class="fa-solid fa-circle-check text-yellow-400 mt-1"></i> Acted as Compliance SPOC; ensured adherence to labor laws and company policies</li>
+<li class="flex gap-4"><i class="fa-solid fa-circle-check text-yellow-400 mt-1"></i> Processed payroll inputs including deductions, taxes, and benefits</li>
+<li class="flex gap-4"><i class="fa-solid fa-circle-check text-yellow-400 mt-1"></i> Handled employee relations and grievance management, including senior-level cases</li>
+<li class="flex gap-4"><i class="fa-solid fa-circle-check text-yellow-400 mt-1"></i> Supported performance appraisal cycles and maintained performance records</li>
+<li class="flex gap-4"><i class="fa-solid fa-circle-check text-yellow-400 mt-1"></i> Generated HR analytics and reports to support leadership decisions</li>
+<li class="flex gap-4"><i class="fa-solid fa-circle-check text-yellow-400 mt-1"></i> Monitored RTO and absenteeism metrics; shared improvement insights</li>
+<li class="flex gap-4"><i class="fa-solid fa-circle-check text-yellow-400 mt-1"></i> Administered benefits programs and resolved employee queries</li>
+<li class="flex gap-4"><i class="fa-solid fa-circle-check text-yellow-400 mt-1"></i> Led HR Connect sessions, engagement activities, and wellness initiatives</li>
+<li class="flex gap-4"><i class="fa-solid fa-circle-check text-yellow-400 mt-1"></i> Collaborated cross-functionally to implement HR policies and programs</li>
+<li class="flex gap-4"><i class="fa-solid fa-circle-check text-yellow-400 mt-1"></i> Maintained strict confidentiality of sensitive employee information</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- SKILLS SECTION - updated with only the 10 requested items -->
+<section id="skills" class="py-24 bg-white dark:bg-zinc-900">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid md:grid-cols-2 gap-20">
+<div data-aos="fade-right">
+<h2 class="text-5xl font-bold tracking-tighter">Core Competencies</h2>
+<div class="mt-10 space-y-9">
+<div>
+<div class="flex justify-between text-sm font-medium mb-2">
+<span>HR Business Partnering</span><span>90%</span>
+</div>
+<div class="h-3 bg-zinc-200 dark:bg-zinc-800 rounded-full overflow-hidden">
+<div class="h-3 w-[90%] bg-gradient-to-r from-yellow-400 to-amber-500 rounded-full"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between text-sm font-medium mb-2">
+<span>Employee Lifecycle Management</span><span>92%</span>
+</div>
+<div class="h-3 bg-zinc-200 dark:bg-zinc-900 rounded-full overflow-hidden">
+<div class="h-3 w-[92%] bg-gradient-to-r from-yellow-400 to-amber-500 rounded-full"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between text-sm font-medium mb-2">
+<span>HR Operations</span><span>90%</span>
+</div>
+<div class="h-3 bg-zinc-200 dark:bg-zinc-800 rounded-full overflow-hidden">
+<div class="h-3 w-[90%] bg-gradient-to-r from-yellow-400 to-amber-500 rounded-full"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between text-sm font-medium mb-2">
+<span>HRIS / Workday Administration</span><span>92%</span>
+</div>
+<div class="h-3 bg-zinc-200 dark:bg-zinc-800 rounded-full overflow-hidden">
+<div class="h-3 w-[92%] bg-gradient-to-r from-yellow-400 to-amber-500 rounded-full"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between text-sm font-medium mb-2">
+<span>Payroll & Statutory Compliance (EPFO/ESIC)</span><span>90%</span>
+</div>
+<div class="h-3 bg-zinc-200 dark:bg-zinc-800 rounded-full overflow-hidden">
+<div class="h-3 w-[90%] bg-gradient-to-r from-yellow-400 to-amber-500 rounded-full"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between text-sm font-medium mb-2">
+<span>Employee Relations & Conflict Resolution</span><span>87%</span>
+</div>
+<div class="h-3 bg-zinc-200 dark:bg-zinc-800 rounded-full overflow-hidden">
+<div class="h-3 w-[87%] bg-gradient-to-r from-yellow-400 to-amber-500 rounded-full"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between text-sm font-medium mb-2">
+<span>Performance Management (Appraisals & PIPs)</span><span>88%</span>
+</div>
+<div class="h-3 bg-zinc-200 dark:bg-zinc-800 rounded-full overflow-hidden">
+<div class="h-3 w-[88%] bg-gradient-to-r from-yellow-400 to-amber-500 rounded-full"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between text-sm font-medium mb-2">
+<span>HR Analytics & Reporting</span><span>85%</span>
+</div>
+<div class="h-3 bg-zinc-200 dark:bg-zinc-800 rounded-full overflow-hidden">
+<div class="h-3 w-[85%] bg-gradient-to-r from-yellow-400 to-amber-500 rounded-full"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between text-sm font-medium mb-2">
+<span>Stakeholder Management</span><span>90%</span>
+</div>
+<div class="h-3 bg-zinc-200 dark:bg-zinc-800 rounded-full overflow-hidden">
+<div class="h-3 w-[90%] bg-gradient-to-r from-yellow-400 to-amber-500 rounded-full"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between text-sm font-medium mb-2">
+<span>Employee Engagement & Culture Initiatives</span><span>88%</span>
+</div>
+<div class="h-3 bg-zinc-200 dark:bg-zinc-800 rounded-full overflow-hidden">
+<div class="h-3 w-[88%] bg-gradient-to-r from-yellow-400 to-amber-500 rounded-full"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Right column (tools & platforms) remains unchanged -->
+<div data-aos="fade-left">
+<h3 class="uppercase text-yellow-400 text-sm font-medium mb-6">ATS & HR Tools</h3>
+<div class="grid grid-cols-3 gap-6 text-center">
+<div class="bg-zinc-100 dark:bg-zinc-800 p-8 rounded-3xl hover:scale-110 transition-transform">
+<i class="fa-solid fa-laptop text-4xl text-yellow-400 mb-4"></i>
+<div class="font-semibold">Workday</div>
+</div>
+<div class="bg-zinc-100 dark:bg-zinc-800 p-8 rounded-3xl hover:scale-110 transition-transform">
+<i class="fa-solid fa-file-invoice text-4xl text-yellow-400 mb-4"></i>
+<div class="font-semibold">TSR Darashaw</div>
+</div>
+<div class="bg-zinc-100 dark:bg-zinc-800 p-8 rounded-3xl hover:scale-110 transition-transform">
+<i class="fa-solid fa-chart-pie text-4xl text-yellow-400 mb-4"></i>
+<div class="font-semibold">Power BI</div>
+</div>
+<div class="bg-zinc-100 dark:bg-zinc-800 p-8 rounded-3xl hover:scale-110 transition-transform">
+<i class="fa-solid fa-users text-4xl text-yellow-400 mb-4"></i>
+<div class="font-semibold">Keka</div>
+</div>
+<div class="bg-zinc-100 dark:bg-zinc-800 p-8 rounded-3xl hover:scale-110 transition-transform">
+<i class="fa-solid fa-user-plus text-4xl text-yellow-400 mb-4"></i>
+<div class="font-semibold">Zoho Recruit</div>
+</div>
+<div class="bg-zinc-100 dark:bg-zinc-800 p-8 rounded-3xl hover:scale-110 transition-transform">
+<i class="fa-solid fa-user-tie text-4xl text-yellow-400 mb-4"></i>
+<div class="font-semibold">Freshteam</div>
+</div>
+<div class="col-span-3 flex justify-center">
+<div class="bg-zinc-100 dark:bg-zinc-800 p-8 rounded-3xl hover:scale-110 transition-transform w-1/3 md:w-1/4 lg:w-1/5">
+<i class="fa-solid fa-briefcase text-4xl text-yellow-400 mb-4"></i>
+<div class="font-semibold">Ultimatix</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- VERTICAL CAREER TIMELINE SECTION -->
+<section id="timeline" class="py-24 bg-gradient-to-b from-zinc-50 to-white dark:from-zinc-950 dark:to-zinc-900 relative overflow-hidden">
+<div class="max-w-5xl mx-auto px-6 relative">
+<div class="text-center mb-16">
+<span class="px-5 py-2 bg-yellow-400 text-zinc-900 text-sm font-semibold rounded-3xl">CAREER PROGRESSION</span>
+<h2 class="text-5xl font-bold tracking-tighter mt-4">Growth Journey & Milestones</h2>
+<p class="mt-4 text-zinc-600 dark:text-zinc-400 max-w-2xl mx-auto">
+
+          From academic foundations to senior HR leadership — a steady upward trajectory
+</p>
+</div>
+<div class="relative">
+<div class="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gradient-to-b from-yellow-400 via-amber-500 to-yellow-300 rounded-full z-0 opacity-70"></div>
+<div class="absolute left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-zinc-300 dark:bg-zinc-700 rounded-full z-0"></div>
+<div class="space-y-16 relative z-10">
+<div class="flex items-center justify-center md:justify-end group">
+<div class="w-full md:w-5/12 bg-white dark:bg-zinc-800 p-6 rounded-2xl shadow-lg border border-yellow-400/20 hover:border-yellow-400/50 transition-all duration-300">
+<div class="text-right">
+<div class="text-sm text-zinc-500">Dec 2024 – Jan 2026</div>
+<h3 class="text-xl font-bold text-yellow-400 mt-1">Associate HRBP</h3>
+<p class="text-zinc-600 dark:text-zinc-400">NTT DATA</p>
+</div>
+</div>
+<div class="absolute left-1/2 transform -translate-x-1/2 w-5 h-5 bg-yellow-400 rounded-full border-4 border-white dark:border-zinc-900 shadow-lg z-20"></div>
+</div>
+<div class="flex items-center justify-center md:justify-start group">
+<div class="w-full md:w-5/12 bg-white dark:bg-zinc-800 p-6 rounded-2xl shadow-lg border border-yellow-400/20 hover:border-yellow-400/50 transition-all duration-300">
+<div class="text-left">
+<div class="text-sm text-zinc-500">Jun 2023 – Dec 2024</div>
+<h3 class="text-xl font-bold text-yellow-400 mt-1">HR Specialist & HRBP</h3>
+<p class="text-zinc-600 dark:text-zinc-400">Tata Consultancy Services</p>
+</div>
+</div>
+<div class="absolute left-1/2 transform -translate-x-1/2 w-5 h-5 bg-yellow-400 rounded-full border-4 border-white dark:border-zinc-900 shadow-lg z-20"></div>
+</div>
+<div class="flex items-center justify-center md:justify-end group">
+<div class="w-full md:w-5/12 bg-white dark:bg-zinc-800 p-6 rounded-2xl shadow-lg border border-yellow-400/20 hover:border-yellow-400/50 transition-all duration-300">
+<div class="text-right">
+<div class="text-sm text-zinc-500">Feb – Apr 2023</div>
+<h3 class="text-xl font-bold text-yellow-400 mt-1">Talent Acquisition Intern</h3>
+<p class="text-zinc-600 dark:text-zinc-400">Zuper Inc</p>
+</div>
+</div>
+<div class="absolute left-1/2 transform -translate-x-1/2 w-5 h-5 bg-yellow-400 rounded-full border-4 border-white dark:border-zinc-900 shadow-lg z-20"></div>
+</div>
+<div class="flex items-center justify-center md:justify-start group">
+<div class="w-full md:w-5/12 bg-white dark:bg-zinc-800 p-6 rounded-2xl shadow-lg border border-yellow-400/20 hover:border-yellow-400/50 transition-all duration-300">
+<div class="text-left">
+<div class="text-sm text-zinc-500">Aug 2022 – Jan 2023</div>
+<h3 class="text-xl font-bold text-yellow-400 mt-1">HR – Talent Acquisition & Labour Law Intern</h3>
+<p class="text-zinc-600 dark:text-zinc-400">Zoho</p>
+</div>
+</div>
+<div class="absolute left-1/2 transform -translate-x-1/2 w-5 h-5 bg-yellow-400 rounded-full border-4 border-white dark:border-zinc-900 shadow-lg z-20"></div>
+</div>
+<div class="flex items-center justify-center md:justify-end group">
+<div class="w-full md:w-5/12 bg-white dark:bg-zinc-800 p-6 rounded-2xl shadow-lg border border-yellow-400/20 hover:border-yellow-400/50 transition-all duration-300">
+<div class="text-right">
+<div class="text-sm text-zinc-500">2021 – 2023</div>
+<h3 class="text-xl font-bold text-yellow-400 mt-1">MBA (HR & Systems)</h3>
+<p class="text-zinc-600 dark:text-zinc-400">Sathyabama Institute of Science and Technology</p>
+</div>
+</div>
+<div class="absolute left-1/2 transform -translate-x-1/2 w-5 h-5 bg-yellow-400 rounded-full border-4 border-white dark:border-zinc-900 shadow-lg z-20"></div>
+</div>
+<div class="flex items-center justify-center md:justify-start group">
+<div class="w-full md:w-5/12 bg-white dark:bg-zinc-800 p-6 rounded-2xl shadow-lg border border-yellow-400/20 hover:border-yellow-400/50 transition-all duration-300">
+<div class="text-left">
+<div class="text-sm text-zinc-500">2019 – 2021</div>
+<h3 class="text-xl font-bold text-yellow-400 mt-1">HR System Analyst</h3>
+<p class="text-zinc-600 dark:text-zinc-400">Tata Consultancy Services</p>
+</div>
+</div>
+<div class="absolute left-1/2 transform -translate-x-1/2 w-5 h-5 bg-yellow-400 rounded-full border-4 border-white dark:border-zinc-900 shadow-lg z-20"></div>
+</div>
+<div class="flex items-center justify-center md:justify-end group">
+<div class="w-full md:w-5/12 bg-white dark:bg-zinc-800 p-6 rounded-2xl shadow-lg border border-yellow-400/20 hover:border-yellow-400/50 transition-all duration-300">
+<div class="text-right">
+<div class="text-sm text-zinc-500">2016 – 2019</div>
+<h3 class="text-xl font-bold text-yellow-400 mt-1">Bachelor of Computer Applications (BCA)</h3>
+<p class="text-zinc-600 dark:text-zinc-400">SRM Institute of Science and Technology</p>
+</div>
+</div>
+<div class="absolute left-1/2 transform -translate-x-1/2 w-5 h-5 bg-yellow-400 rounded-full border-4 border-white dark:border-zinc-900 shadow-lg z-20"></div>
+</div>
+</div>
+<div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 -mb-10 text-sm font-medium text-zinc-500 dark:text-zinc-400">
+
+          Career &amp; Education Journey Begins
+</div>
+</div>
+</div>
+</section>
+<!-- ACHIEVEMENTS -->
+<section id="achievements" class="py-24 bg-gradient-to-b from-zinc-100 to-white dark:from-black dark:to-zinc-900">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center mb-16">
+<span class="text-5xl">🏆</span>
+<h2 class="text-5xl font-bold tracking-tighter mt-4">Key Achievements</h2>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<div data-aos="zoom-in" class="bg-white dark:bg-zinc-900 p-10 rounded-3xl text-center border border-yellow-400/20">
+<div class="text-6xl mb-6">🏅</div>
+<div class="font-bold text-2xl">LOVE Award – FY25</div>
+<div class="text-yellow-400 mt-2">NTT DATA</div>
+<p class="mt-6 text-zinc-500">Recognized for outstanding contribution to employee engagement and culture</p>
+</div>
+<div data-aos="zoom-in" data-aos-delay="100" class="bg-white dark:bg-zinc-900 p-10 rounded-3xl text-center border border-yellow-400/20">
+<div class="text-6xl mb-6">🔥</div>
+<div class="font-bold text-2xl">SPIRIT Award – FY25</div>
+<div class="text-yellow-400 mt-2">NTT DATA</div>
+<p class="mt-6 text-zinc-500">For Exception performance in handling critical cases and Team spirit in People &amp; Culture &amp; Culture</p>
+</div>
+<div data-aos="zoom-in" data-aos-delay="200" class="bg-white dark:bg-zinc-900 p-10 rounded-3xl text-center border border-yellow-400/20">
+<div class="text-6xl mb-6">⭐</div>
+<div class="font-bold text-2xl">Long Term Service Award</div>
+<div class="text-yellow-400 mt-2">2023 • TCS</div>
+<p class="mt-6 text-zinc-500">Recognized for dedication and long-term commitment</p>
+</div>
+</div>
+</div>
+</section>
+<!-- CERTIFICATES & PROJECTS SECTION -->
+<section id="certificates" class="py-20 bg-white dark:bg-zinc-900">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center mb-12">
+<span class="px-5 py-2 bg-yellow-400 text-zinc-900 text-sm font-semibold rounded-3xl">CERTIFICATIONS & PROJECTS</span>
+<h2 class="text-4xl md:text-5xl font-bold tracking-tighter mt-4 text-zinc-900 dark:text-white">
+
+          Professional Development &amp; Impactful Projects
+</h2>
+<p class="mt-4 text-zinc-600 dark:text-zinc-400 max-w-3xl mx-auto">
+
+          Combining targeted certifications with high-value HR process transformation initiatives.
+</p>
+</div>
+<div class="grid md:grid-cols-2 gap-10 lg:gap-16">
+<!-- Left: Certifications -->
+<div>
+<h3 class="text-2xl font-bold text-yellow-500 mb-6 flex items-center gap-3">
+<i class="fa-solid fa-certificate text-3xl"></i>
+
+            Certifications
+</h3>
+<ul class="space-y-5">
+<li class="flex items-start gap-4 bg-zinc-50 dark:bg-zinc-800/50 p-5 rounded-xl border border-zinc-200 dark:border-zinc-700 hover:border-yellow-400/40 transition-all">
+<i class="fa-solid fa-medal text-yellow-500 text-2xl mt-1 flex-shrink-0"></i>
+<div><p class="font-medium text-zinc-900 dark:text-white">Gen AI Academy : White Belt</p></div>
+</li>
+<li class="flex items-start gap-4 bg-zinc-50 dark:bg-zinc-800/50 p-5 rounded-xl border border-zinc-200 dark:border-zinc-700 hover:border-yellow-400/40 transition-all">
+<i class="fa-solid fa-medal text-yellow-500 text-2xl mt-1 flex-shrink-0"></i>
+<div><p class="font-medium text-zinc-900 dark:text-white">Gen AI Academy Yellow Belt Level 1</p></div>
+</li>
+<li class="flex items-start gap-4 bg-zinc-50 dark:bg-zinc-800/50 p-5 rounded-xl border border-zinc-200 dark:border-zinc-700 hover:border-yellow-400/40 transition-all">
+<i class="fa-solid fa-chart-line text-yellow-500 text-2xl mt-1 flex-shrink-0"></i>
+<div><p class="font-medium text-zinc-900 dark:text-white">Power BI for Business Intelligence</p></div>
+</li>
+<li class="flex items-start gap-4 bg-zinc-50 dark:bg-zinc-800/50 p-5 rounded-xl border border-zinc-200 dark:border-zinc-700 hover:border-yellow-400/40 transition-all">
+<i class="fa-solid fa-user-tie text-yellow-500 text-2xl mt-1 flex-shrink-0"></i>
+<div><p class="font-medium text-zinc-900 dark:text-white">Senior Professional in Human Resources: Employee Engagement</p></div>
+</li>
+<li class="flex items-start gap-4 bg-zinc-50 dark:bg-zinc-800/50 p-5 rounded-xl border border-zinc-200 dark:border-zinc-700 hover:border-yellow-400/40 transition-all">
+<i class="fa-solid fa-handshake text-yellow-500 text-2xl mt-1 flex-shrink-0"></i>
+<div><p class="font-medium text-zinc-900 dark:text-white">Relationship Management and Global Mindset</p></div>
+</li>
+<li class="flex items-start gap-4 bg-zinc-50 dark:bg-zinc-800/50 p-5 rounded-xl border border-zinc-200 dark:border-zinc-700 hover:border-yellow-400/40 transition-all">
+<i class="fa-solid fa-gavel text-yellow-500 text-2xl mt-1 flex-shrink-0"></i>
+<div><p class="font-medium text-zinc-900 dark:text-white">Grievances, Investigations, and Conflict Resolution</p></div>
+</li>
+</ul>
+</div>
+<!-- Right: Projects -->
+<div>
+<h3 class="text-2xl font-bold text-yellow-500 mb-6 flex items-center gap-3">
+<i class="fa-solid fa-project-diagram text-3xl"></i>
+
+            Key Projects
+</h3>
+<ul class="space-y-7">
+<li class="bg-zinc-50 dark:bg-zinc-800/50 p-6 rounded-xl border border-zinc-200 dark:border-zinc-700 hover:border-yellow-400/50 transition-all">
+<h4 class="font-bold text-lg text-zinc-900 dark:text-white mb-3">AI-Driven Exit Central (Offboarding)</h4>
+<div class="space-y-4 text-sm text-zinc-700 dark:text-zinc-300">
+<div><span class="font-semibold text-yellow-600">The Goal:</span><br>Automate the offboarding lifecycle to mitigate security risks and capture strategic insights.</div>
+<div><span class="font-semibold text-yellow-600">Outcome:</span><br>80% reduction in security vulnerabilities and 30% decrease in administrative manual labor.</div>
+</div>
+</li>
+<li class="bg-zinc-50 dark:bg-zinc-800/50 p-6 rounded-xl border border-zinc-200 dark:border-zinc-700 hover:border-yellow-400/50 transition-all">
+<h4 class="font-bold text-lg text-zinc-900 dark:text-white mb-3">Onboarding Process Optimization</h4>
+<div class="space-y-4 text-sm text-zinc-700 dark:text-zinc-300">
+<div><span class="font-semibold text-yellow-600">The Goal:</span><br>Transition from "one-size-fits-all" orientation to a personalized, high-speed integration path.</div>
+<div><span class="font-semibold text-yellow-600">Outcome:</span><br>33% faster time-to-productivity and an 82% prevention of manual data errors.</div>
+</div>
+</li>
+<li class="bg-zinc-50 dark:bg-zinc-800/50 p-6 rounded-xl border border-zinc-200 dark:border-zinc-700 hover:border-yellow-400/50 transition-all">
+<h4 class="font-bold text-lg text-zinc-900 dark:text-white mb-3">Strategic HRBP &amp; TA Effectiveness</h4>
+<div class="space-y-4 text-sm text-zinc-700 dark:text-zinc-300">
+<div><span class="font-semibold text-yellow-600">The Goal:</span><br>Empower HR Business Partners and Talent Acquisition with predictive data to drive hiring and retention.</div>
+<div><span class="font-semibold text-yellow-600">Outcome:</span><br>50% reduction in Time-to-Fill and 40% more time reclaimed for HRBPs to focus on strategic consulting.</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- TESTIMONIALS -->
+<section id="testimonials" class="py-24 bg-white dark:bg-zinc-900">
+<div class="max-w-7xl mx-auto px-6">
+<div class="flex flex-col md:flex-row justify-between items-end mb-12">
+<div>
+<span class="uppercase text-sm tracking-widest text-yellow-400">What People Say</span>
+<h2 class="text-5xl font-bold tracking-tighter">Real Voices, Real Impact</h2>
+</div>
+<div class="mt-6 md:mt-0 text-right">
+<div class="flex items-center gap-2 justify-end">
+<div id="avg-rating" class="text-6xl font-bold text-yellow-400">4.9</div>
+<div>
+<div class="flex text-2xl text-yellow-400" id="avg-stars">★★★★☆</div>
+<div class="text-sm text-zinc-500" id="review-count">12 reviews</div>
+</div>
+</div>
+</div>
+</div>
+<div id="testimonials-grid" class="grid md:grid-cols-3 gap-8"></div>
+<div class="mt-20 max-w-2xl mx-auto bg-zinc-100 dark:bg-zinc-800 p-10 rounded-3xl">
+<h3 class="text-3xl font-semibold text-center mb-8">Share Your Feedback</h3>
+<form id="feedback-form" class="space-y-8">
+<div class="grid grid-cols-2 gap-6">
+<div>
+<label class="block text-sm font-medium mb-2">Your Name</label>
+<input type="text" id="feedback-name" required
+
+                     class="w-full px-6 py-4 bg-white dark:bg-zinc-900 border border-transparent focus:border-yellow-400 rounded-3xl outline-none">
+</div>
+<div>
+<label class="block text-sm font-medium mb-2">Your Role / Relation</label>
+<input type="text" id="feedback-role" placeholder="e.g., Colleague, Manager"
+
+                     class="w-full px-6 py-4 bg-white dark:bg-zinc-900 border border-transparent focus:border-yellow-400 rounded-3xl outline-none">
+</div>
+</div>
+<div>
+<label class="block text-sm font-medium mb-3">Rating</label>
+<div id="star-rating" class="flex gap-3 text-4xl cursor-pointer">
+<span data-value="1" class="star text-zinc-300 hover:text-yellow-400">★</span>
+<span data-value="2" class="star text-zinc-300 hover:text-yellow-400">★</span>
+<span data-value="3" class="star text-zinc-300 hover:text-yellow-400">★</span>
+<span data-value="4" class="star text-zinc-300 hover:text-yellow-400">★</span>
+<span data-value="5" class="star text-zinc-300 hover:text-yellow-400">★</span>
+</div>
+</div>
+<div>
+<label class="block text-sm font-medium mb-2">Your Message</label>
+<textarea id="feedback-message" rows="4" required
+
+                      class="w-full px-6 py-4 bg-white dark:bg-zinc-900 border border-transparent focus:border-yellow-400 rounded-3xl outline-none resize-none"></textarea>
+</div>
+<button type="submit"
+
+                  class="w-full py-5 bg-yellow-400 hover:bg-amber-500 text-zinc-900 font-bold text-lg rounded-3xl transition-all active:scale-[0.97]">
+
+            Submit Feedback
+</button>
+</form>
+</div>
+</div>
+</section>
+<!-- CONTACT -->
+<section id="contact" class="py-24 bg-zinc-950 text-white">
+<div class="max-w-7xl mx-auto px-6 text-center">
+<div class="max-w-md mx-auto">
+<h2 class="text-5xl font-bold tracking-tighter">Ready to build great teams together?</h2>
+<p class="mt-6 text-zinc-400">Whether you're a hiring manager, fellow HR professional, or just want to connect — I'd love to hear from you.</p>
+<div class="mt-12 flex flex-col gap-6">
+<a href="mailto:malavikannan1999@gmail.com"
+
+             class="flex items-center justify-center gap-4 text-xl hover:text-yellow-400 transition-colors">
+<i class="fa-solid fa-envelope text-3xl"></i>
+<span>malavikannan1999@gmail.com</span>
+</a>
+<a href="tel:+919841248896"
+
+             class="flex items-center justify-center gap-4 text-xl hover:text-yellow-400 transition-colors">
+<i class="fa-solid fa-phone text-3xl"></i>
+<span>+91 98412 48896</span>
+</a>
+<a href="https://linkedin.com/in/malavi-m" target="_blank"
+
+             class="flex items-center justify-center gap-4 text-xl hover:text-yellow-400 transition-colors">
+<i class="fa-brands fa-linkedin text-3xl"></i>
+<span>LinkedIn Profile</span>
+</a>
+</div>
+<div class="mt-16 text-xs text-zinc-500">
+
+          Chennai, Tamil Nadu • Open to relocation &amp; remote HRBP roles
+</div>
+</div>
+</div>
+</section>
+<!-- FOOTER -->
+<footer class="bg-black text-zinc-500 py-12 text-center text-sm">
+<div class="max-w-7xl mx-auto px-6">
+
+      © 2026 Malavi Manickavelu • Built with passion for HR &amp; beautiful design
+<div class="mt-4 flex justify-center gap-6">
+<a href="#" class="hover:text-white">Privacy</a>
+<a href="#" class="hover:text-white">Terms</a>
+</div>
+</div>
+</footer>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<!-- ✅ THEME FADER OVERLAY (smooth background change) -->
+<div id="theme-fader" style="
+
+    position:fixed; inset:0; pointer-events:none; opacity:0;
+
+    transition: opacity 900ms cubic-bezier(0.22,1,0.36,1);
+
+    z-index:9999;
+
+  "></div>
+<script>
+
+    // ===================== ✅ FIXED THEME SYSTEM (NO REVERT, RETAINS STATE) =====================
+
+    function setThemeIcon() {
+
+      const isDark = document.documentElement.classList.contains('dark');
+
+      const icon = document.getElementById('theme-icon');
+
+      if (!icon) return;
+
+      // If dark mode is active -> show SUN (click means go light)
+
+      if (isDark) {
+
+        icon.classList.remove('fa-moon');
+
+        icon.classList.add('fa-sun');
+
+      } else {
+
+        icon.classList.remove('fa-sun');
+
+        icon.classList.add('fa-moon');
+
+      }
+
+    }
+
+    function flashThemeFader() {
+
+      const fader = document.getElementById('theme-fader');
+
+      if (!fader) return;
+
+      const currentlyDark = document.documentElement.classList.contains('dark');
+
+      // If currently dark -> switching to light (bright wash); else -> switching to dark (dim wash)
+
+      fader.style.background = currentlyDark
+
+        ? "radial-gradient(1200px 800px at 20% 10%, rgba(255,255,255,0.55), transparent 60%), linear-gradient(180deg, rgba(255,255,255,0.75), rgba(255,255,255,0.25))"
+
+        : "radial-gradient(1100px 700px at 20% 10%, rgba(255,216,104,0.06), transparent 55%), linear-gradient(180deg, rgba(0,0,0,0.78), rgba(0,0,0,0.35))";
+
+      fader.style.opacity = "1";
+
+      setTimeout(() => (fader.style.opacity = "0"), 520);
+
+    }
+
+    function applyThemeFromStorage() {
+
+      const saved = localStorage.getItem('theme'); // "light" | "dark" | null
+
+      if (saved === 'dark') document.documentElement.classList.add('dark');
+
+      else document.documentElement.classList.remove('dark');
+
+      setThemeIcon();
+
+    }
+
+    function toggleDarkMode() {
+
+      flashThemeFader();
+
+      const isDark = document.documentElement.classList.contains('dark');
+
+      if (isDark) {
+
+        document.documentElement.classList.remove('dark');
+
+        localStorage.setItem('theme', 'light');
+
+      } else {
+
+        document.documentElement.classList.add('dark');
+
+        localStorage.setItem('theme', 'dark');
+
+      }
+
+      setThemeIcon();
+
+    }
+
+    // ✅ Initial theme on page load (single source of truth)
+
+    (function initThemeOnce() {
+
+      if (!localStorage.getItem('theme')) {
+
+        // default to system preference once, then save
+
+        const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+        localStorage.setItem('theme', prefersDark ? 'dark' : 'light');
+
+      }
+
+      applyThemeFromStorage();
+
+    })();
+
+
+    // ===================== TESTIMONIALS (YOUR ORIGINAL) =====================
+
+    let testimonials = [
+
+      {
+
+        name: "Priya Sharma",
+
+        role: "Delivery Manager, NTT DATA",
+
+        rating: 5,
+
+        text: "Malavi transformed our employee engagement. Her monthly HR Connect sessions at client sites are legendary. True people leader!",
+
+        date: "Feb 2026"
+
+      },
+
+      {
+
+        name: "Rahul Menon",
+
+        role: "HR Head, TCS",
+
+        rating: 5,
+
+        text: "One of the most reliable and data-driven HRBPs I've worked with. Zero compliance issues under her watch. Highly recommended.",
+
+        date: "Jan 2026"
+
+      },
+
+      {
+
+        name: "Ananya Rao",
+
+        role: "Team Lead",
+
+        rating: 4,
+
+        text: "Her onboarding process optimization made new joiners feel welcomed from day one. The PIP support she provided was exceptional.",
+
+        date: "Dec 2025"
+
+      }
+
+    ];
+
+    function loadTestimonials() {
+
+      const saved = localStorage.getItem('malaviTestimonials');
+
+      if (saved) testimonials = JSON.parse(saved);
+
+      renderTestimonials();
+
+      calculateAverageRating();
+
+    }
+
+    function saveTestimonials() {
+
+      localStorage.setItem('malaviTestimonials', JSON.stringify(testimonials));
+
+    }
+
+    function calculateAverageRating() {
+
+      if (!testimonials.length) return;
+
+      const avg = (testimonials.reduce((sum, t) => sum + t.rating, 0) / testimonials.length).toFixed(1);
+
+      document.getElementById('avg-rating').textContent = avg;
+
+      let starsHTML = '';
+
+      const full = Math.floor(avg);
+
+      for (let i = 0; i < 5; i++) starsHTML += i < full ? '★' : '☆';
+
+      document.getElementById('avg-stars').innerHTML = starsHTML;
+
+      document.getElementById('review-count').textContent = `${testimonials.length} reviews`;
+
+    }
+
+    function renderTestimonials() {
+
+      const container = document.getElementById('testimonials-grid');
+
+      container.innerHTML = '';
+
+      testimonials.forEach((t) => {
+
+        const div = document.createElement('div');
+
+        div.className = `testimonial-card bg-white dark:bg-zinc-900 p-8 rounded-3xl border border-transparent hover:border-yellow-400/30`;
+
+        div.innerHTML = `
+<div class="flex justify-between">
+<div class="text-4xl text-yellow-400">${'★'.repeat(t.rating)}${'☆'.repeat(5-t.rating)}</div>
+<div class="text-xs text-zinc-400">${t.date}</div>
+</div>
+<p class="mt-6 text-zinc-600 dark:text-zinc-400 leading-relaxed">"${t.text}"</p>
+<div class="mt-8 flex items-center gap-4">
+<div class="w-12 h-12 bg-gradient-to-br from-yellow-400 to-amber-500 text-white rounded-2xl flex items-center justify-center font-bold">${t.name[0]}</div>
+<div>
+<div class="font-semibold">${t.name}</div>
+<div class="text-xs text-zinc-500">${t.role}</div>
+</div>
+</div>
+
+        `;
+
+        container.appendChild(div);
+
+      });
+
+    }
+
+    // Star rating selector
+
+    let selectedRating = 5;
+
+    function initStarRating() {
+
+      const stars = document.querySelectorAll('#star-rating span');
+
+      // ✅ default highlight to 5
+
+      stars.forEach((s, i) => s.style.color = (i + 1) <= selectedRating ? '#eab308' : '#d1d5db');
+
+      stars.forEach(star => {
+
+        star.addEventListener('click', () => {
+
+          selectedRating = parseInt(star.dataset.value);
+
+          stars.forEach((s, i) => {
+
+            s.style.color = (i + 1) <= selectedRating ? '#eab308' : '#d1d5db';
+
+          });
+
+        });
+
+        star.addEventListener('mouseover', () => {
+
+          const val = parseInt(star.dataset.value);
+
+          stars.forEach((s, i) => {
+
+            s.style.color = (i + 1) <= val ? '#eab308' : '#d1d5db';
+
+          });
+
+        });
+
+      });
+
+      document.getElementById('star-rating').addEventListener('mouseleave', () => {
+
+        stars.forEach((s, i) => {
+
+          s.style.color = (i + 1) <= selectedRating ? '#eab308' : '#d1d5db';
+
+        });
+
+      });
+
+    }
+
+    function initFeedbackForm() {
+
+      const form = document.getElementById('feedback-form');
+
+      form.addEventListener('submit', function(e) {
+
+        e.preventDefault();
+
+        const name = document.getElementById('feedback-name').value.trim();
+
+        const role = document.getElementById('feedback-role').value.trim() || 'Anonymous';
+
+        const message = document.getElementById('feedback-message').value.trim();
+
+        if (!name || !message) return;
+
+        const newTestimonial = {
+
+          name,
+
+          role,
+
+          rating: selectedRating,
+
+          text: message,
+
+          date: new Intl.DateTimeFormat('en-US', { month: 'short', year: 'numeric' }).format(new Date())
+
+        };
+
+        testimonials.unshift(newTestimonial);
+
+        renderTestimonials();
+
+        calculateAverageRating();
+
+        saveTestimonials();
+
+        form.reset();
+
+        selectedRating = 5;
+
+        // ✅ reset stars back to 5 highlight
+
+        const stars = document.querySelectorAll('#star-rating span');
+
+        stars.forEach((s, i) => s.style.color = (i + 1) <= selectedRating ? '#eab308' : '#d1d5db');
+
+        const btn = form.querySelector('button');
+
+        const originalText = btn.textContent;
+
+        btn.textContent = 'Thank You! Feedback Added ✨';
+
+        btn.style.backgroundColor = '#10b981';
+
+        setTimeout(() => {
+
+          btn.textContent = originalText;
+
+          btn.style.backgroundColor = '';
+
+        }, 3000);
+
+      });
+
+    }
+
+    function typingEffect() {
+
+      const title = document.getElementById('typing-title');
+
+      const texts = ["HR Business Partner", "People & Culture"];
+
+      let count = 0;
+
+      let currentText = '';
+
+      let isDeleting = false;
+
+      function type() {
+
+        const fullText = texts[count];
+
+        currentText = isDeleting
+
+          ? fullText.substring(0, currentText.length - 1)
+
+          : fullText.substring(0, currentText.length + 1);
+
+        title.textContent = currentText;
+
+        let typeSpeed = isDeleting ? 30 : 60;
+
+        if (!isDeleting && currentText === fullText) {
+
+          typeSpeed = 2000;
+
+          isDeleting = true;
+
+        } else if (isDeleting && currentText === '') {
+
+          isDeleting = false;
+
+          count = (count + 1) % texts.length;
+
+          typeSpeed = 300;
+
+        }
+
+        setTimeout(type, typeSpeed);
+
+      }
+
+      type();
+
+    }
+
+    function initialize() {
+
+      AOS.init({ once: true, duration: 800, easing: 'ease-out-cubic' });
+
+      loadTestimonials();
+
+      initStarRating();
+
+      initFeedbackForm();
+
+      typingEffect();
+
+      setTimeout(() => {
+
+        const photo = document.getElementById('hero-photo');
+
+        if (!photo) return;
+
+        photo.style.transition = 'all 1.2s cubic-bezier(0.23, 1, 0.32, 1)';
+
+        photo.style.transform = 'scale(1.03)';
+
+        setTimeout(() => { photo.style.transform = 'scale(1)'; }, 800);
+
+      }, 1200);
+
+      console.log('%c✨ Malavi Manickavelu Portfolio Loaded Successfully ✨', 'color:#eab308; font-family:monospace; font-size:13px');
+
+    }
+
+    window.onload = initialize;
+</script>
+</body>
+</html>
+ 
